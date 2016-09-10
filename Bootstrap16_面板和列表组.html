@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>面板和列表组</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	</style>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 面板组件 panel -->
+	<div class="panel panel-danger">
+		<div class="panel-heading">
+			<h3 class="panel-title">我是标题区域</h3>
+		</div>
+		<div class="panel-body">
+			我是一个面板容器
+		</div>
+		<table class="table">
+			<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</table>
+		<ul class="list-group">
+			<li class="list-group-item">1.这是首页</li>
+			<li class="list-group-item">2.这是第二页 <span class="badge">10</span></li>
+			<li class="list-group-item">3.这是第三页</li>
+			<li class="list-group-item">4.这是第四页</li>
+		</ul>
+		<div class="panel-footer">
+			我是底部
+		</div>
+	</div>
+		
+
+
+
+	<!-- 列表组 -->
+	<ul class="list-group">
+		<li class="list-group-item">1.这是首页</li>
+		<li class="list-group-item">2.这是第二页 <span class="badge">10</span></li>
+		<li class="list-group-item">3.这是第三页</li>
+		<li class="list-group-item">4.这是第四页</li>
+	</ul>
+	<div class="list-group">
+		<a href="#" class="list-group-item">1.这是首页</a>
+		<a href="#" class="list-group-item active">2.这是第二页 <span class="badge">10</span></a>
+		<a href="#" class="list-group-item disabled">3.这是第三页</a>
+		<a href="#" class="list-group-item list-group-item-success">4.这是第四页</a>
+	</div>
+	<div class="list-group">
+		<button class="list-group-item">1.这是首页</button>
+		<button class="list-group-item active">2.这是第二页 <span class="badge">10</span></button>
+		<button class="list-group-item">3.这是第三页</button>
+		<button class="list-group-item">4.这是第四页</button>
+	</div>
+	<div class="list-group">
+		<a href="#" class="list-group-item">
+			<h4>列表标题</h4>
+			<p>详细内容。。。。</p>
+		</a>
+		<a href="#" class="list-group-item active">2.这是第二页 <span class="badge">10</span></a>
+		<a href="#" class="list-group-item disabled">3.这是第三页</a>
+		<a href="#" class="list-group-item list-group-item-success">4.这是第四页</a>
+	</div>
+
+
+</body>
+</html>

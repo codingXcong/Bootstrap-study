@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>选项卡tab</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	</style>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<a href="#" 
+			data-toggle="tooltip" 
+			data-original-title="<b>超文本标识符</b>"
+			title="超文本标识符"
+			data-animation="false"
+			data-html="true"
+			data-placement="auto top"
+			data-trigger="hover focus"
+			data-delay="100"
+			data-template="<div
+	class='tooltip'><div
+	class='tooltip-arrow'></div><div
+	class='tooltip-inner'>123</div></div>"
+	>HTML5</a> 
+
+	 <div id="selection">
+		<a href="#" rel="tooltip" data-toggle="tooltip" title="超文本标识符">HTML5</a>
+		<a href="#" data-toggle="tooltip" title="超文本标识符">HTML5</a>
+	</div> 
+
+
+	<a href="#" data-toggle="tooltip" title="超文本标识符">HTML5</a>
+	
+	<script type="text/javascript">
+
+		$('a').tooltip({
+			trigger : 'click'
+		});
+	</script>
+</body>
+</html>
