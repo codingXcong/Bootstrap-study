@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>按钮和折叠插件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	</style>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<button class="btn btn-primary" data-toggle="button">按钮</button>
+	<div class="btn-group" data-toggle="buttons">
+		<label for="" class="btn btn-primary active">
+			<input type="radio" name="sex" value="男" checked>男
+		</label>
+		<label for="" class="btn btn-primary">
+			<input type="radio" name="sex" value="女">女
+		</label>
+	</div>
+	<div class="btn-group" data-toggle="buttons">
+		<label for="" class="btn btn-primary active">
+			<input type="checkbox" name="fa" value="体育" checked>体育
+		</label>
+		<label for="" class="btn btn-primary">
+			<input type="checkbox" name="fa" value="音乐">音乐
+		</label>
+		<label for="" class="btn btn-primary">
+			<input type="checkbox" name="fa" value="艺术">艺术
+		</label>
+		<label for="" class="btn btn-primary">
+			<input type="checkbox" name="fa" value="电脑">电脑
+		</label>
+	</div> 
+	<button class="btn btn-primary" data-loading-text="Loading..." autocomplete="off">开始上传</button>
+
+	<!-- 折叠插件 -->
+	<button class="btn btn-primary" data-target="#content">折叠</button>
+	<div class="collapse" id="content">
+		<div class="well">Bootstrap 是Twitter 推出的一个用于前端开发的开源工具包。它由Twitter 的设计师Mark Otto 和Jacob Thornton 合作开发,是一个CSS/HTML 框架。目前,Bootstrap 最新版本为3.0 。</div>
+	</div>
+
+
+
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">第一部分链接</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse">
+				<div class="panel-body">
+					第一部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">第二部分链接</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse">
+				<div class="panel-body">
+					第二部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">第三部分链接</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse">
+				<div class="panel-body">
+					第三部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#collapseFour" data-toggle="collapse" data-parent="#accordion">第四部分链接</a>
+				</h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse">
+				<div class="panel-body">
+					第四部分内容
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+</div>
+<script type="text/javascript">
+	$('button').on('click', function () {
+		// $('#content').collapse('toggle');
+		// $('#content').collapse({
+		// 	toggle : true,
+		// });
+		$('#content').collapse('toggle');
+	});
+
+	$('#content').on('show.bs.collapse', function () {
+		alert('调用show方法是触发');
+	}); 
+</script>
+</body>
+</html>
