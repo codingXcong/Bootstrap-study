@@ -1,0 +1,64 @@
+<html lang="zh-CN">
+<head>
+    <style type="text/css">
+        #step span{
+            height:40px;
+            width:28%;
+            float:left;
+            margin-right:42px;
+            background:#dde1e9;
+            position: relative;
+            line-height:40px;
+            font-size:20px;
+            padding-left:10px;
+        }
+        #step .one:after,#step .two:after{
+            width: 0;
+            height: 0;
+            content:' ';
+            border-top: 20px solid transparent;
+            border-left: 20px solid #dde1e9;
+            border-bottom: 20px solid transparent;
+            border-right: 20px solid transparent;
+            position: absolute;
+            right: -40px;
+            top: 0;
+        }
+        #step .two:before,#step .three:before{
+            width: 0;
+            height: 0;
+            content:' ';
+            border-top: 20px solid #dde1e9;
+            border-right: 20px solid #dde1e9;
+            border-left: 20px solid transparent;
+            border-bottom: 20px solid #dde1e9;
+            position: absolute;
+            left: -40px;
+            top: 0;
+        }
+       #step .active{
+           background: #e6af0d;
+           border-color: #e6af0d;
+       }
+       #step .active:before{
+          border-top-color:#e6af0d;
+            border-right-color: #e6af0d;
+            border-left-color: transparent;
+            border-bottom-color: #e6af0d;
+       }
+        #step .active:after{
+           border-top-color:transparent;
+            border-left-color:#e6af0d;
+            border-bottom-color:transparent;
+            border-right-color:transparent;
+       }
+    </style>
+</head>
+<body>
+<div id="step">
+<span class="one ">1 填写账号信息</span>
+<span class="two active">2 验证账户信息</span>
+<span class="three">3 注册成功</span>
+</div>
+</body>
+</html>
